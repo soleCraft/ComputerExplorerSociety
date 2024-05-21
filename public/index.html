@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/CES LOGO WITHOUT BACKGROUND.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="studentNo.css">
+    <link rel="stylesheet" href="receiptForm.css">
+    <link rel="stylesheet" href="receiptVerify.css">
+    <script type="module" src="index.js"></script>
+    <title>Computer Explorer Society</title>
+</head>
+<body>
+    <main>
+        <div class="hero-section">
+            <div class="first-container">
+                <div class="logo-container">
+               
+                </div>
+                <div class="title-container">
+                    <h1>Computer Explorer Society</h1>
+                </div>
+                <div class="p-container">
+                    <p>Dedicated for event payments</p>
+                </div>
+                <div class="buttons-container">
+                    <div class="register-container">
+                        <button id="registerButton">REGISTER</button>
+                    </div>
+                    <div class="login-container">
+                        <button id="paymentButton">PAYMENT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container">
+               
+            </div>
+        </div>
+        
+    <section>
+        <div class="wrapper-2">
+            <div class="title-2-container">
+                <h2>ICCT AND CES EVENTS</h2>
+            </div>
+            <div class="scroller">
+                <div class="event-card">
+                    <div class="event-img-container">
+                        <img src="images/poster 1.png">
+                    </div>
+                    <div class="event-name-container">
+                        <h2>Hackaton</h2>
+                    </div>
+                    <div class="learnMore-container">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+    
+                <div class="event-card">
+                    <div class="event-img-container">
+                        <img src="images/poster 2.png">
+                    </div>
+                    <div class="event-name-container">
+                        <h2>Python</h2>
+                    </div>
+                    <div class="learnMore-container">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+    
+                <div class="event-card">
+                    <div class="event-img-container">
+                        <img src="images/poster 3.png">
+                    </div>
+                    <div class="event-name-container">
+                        <h2>Database Analytics</h2>
+                    </div>
+                    <div class="learnMore-container">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+    
+                <div class="event-card">
+                    <div class="event-img-container">
+                        <img src="images/poster 1.png">
+                    </div>
+                    <div class="event-name-container">
+                        <h2>Hackaton</h2>
+                    </div>
+                    <div class="learnMore-container">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+        
+                <div class="event-card">
+                    <div class="event-img-container">
+                        <img src="images/poster 3.png">
+                    </div>
+                    <div class="event-name-container">
+                        <h2>Database Analytics</h2>
+                    </div>
+                    <div class="learnMore-container">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+        
+                <div class="event-card">
+                    <div class="event-img-container">
+                        <img src="images/poster 2.png">
+                    </div>
+                    <div class="event-name-container">
+                        <h2>Python</h2>
+                    </div>
+                    <div class="learnMore-container">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+        <div class="left-container">
+            <div class="footer-logo-container">
+                <img src="images/CES LOGO WITHOUT BACKGROUND.png">
+            </div>
+            <div class="connect-with-us-links-container">
+                <div class="connect-with-us-container">
+                    <h5>Connect with us</h5>
+                </div>
+                <div class="links-container">
+                    <a href="https://web.facebook.com/ces.icct" target="_blank">CES FB Page</a>
+                </div>
+                <div class="links-container">
+                    <a href="https://web.facebook.com/profile.php?id=100064513457440" target="_blank">ICCT Main FB Page</a>
+                </div>
+                <div class="links-container">
+                    <a href="https://web.facebook.com/profile.php?id=100064153265505" target="_blank">ICCT Antipolo FB Page</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="final-statement-container">
+                <h5>Computer Explorer Society</h5>
+            </div>
+
+            <div class="developers-container">
+                <h5>Developers</h5>
+                <p><strong>Surpervised by:</strong> Joriz Chiong</p>
+                <p><strong>Project Manager:</strong> Cyril John Nonay</p>
+                <p><strong>Assistant Project Manager:</strong> Reiner Felias</p>
+                <p><strong>Back-End: </strong> Jeremiah Rey</p>
+                <p><strong>Front-End:</strong> Romano Ycoy</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="studentIDVerifyPopup" class="studentIDVerifyPopup">
+        <div class="studNo-wrapper">
+            <button class="close-studNo-icon" id="close-btn"><i class='bx bx-x'></i>></button>
+            <div class="contents-studNo-wrapper">
+            <label class="label-for-studNo" for="studentNoInput">Enter student number</label>
+            <i class='bx bx-book'></i>
+            <input type="text" id="studentNoInput" name="studentNo" placeholder="Student No." required>
+            <div class="button-container-search">
+                <button type="submit" id="searchButton">Search</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <form id="receipt-form-wrapper" class="receipt-form-wrapper">
+            <button class="close-studNo-icon" id="closeBtnReceiptForm"><i class='bx bx-x'></i></button>
+            <h1><i class='bx bx-hash'></i>
+                <i class='bx bxl-paypal'></i>
+                <i class='bx bx-wallet'></i>
+                <i class='bx bx-calendar-event'></i>
+                <i class='bx bx-chalkboard'></i>Receipt Form</h1>
+            <select id="teacherOptions" name="teacher">
+                <option value="" disabled selected>Select Teacher</option>
+            </select>
+
+            <select id="eventOptions" name="event">
+                <option value="" disabled selected>Select Event</option>
+            </select>
+
+            <select id="paymentOptions" name="paymentMethod" required onchange="toggleReferenceNumber()">
+                <option value="" disabled selected>Select Payment Method</option>
+                <option value="Online Payment">Online Payment</option>
+                <option value="Cash">Cash</option>
+            </select>
+
+            <select id="appOptions" name="app" required>
+                <option value="" disabled selected>Select App</option>
+                <option value="ECPAY">ECPAY</option>
+                <option value="G-CASH">G-CASH</option>
+                <option value="PAYMAYA">PAYMAYA</option>
+            </select>
+            <input type="number" id="referenceNumber" name="referenceNumber" placeholder="Reference Number" required>
+            <button id="submitButton">SUBMIT</button>
+        </form>
+    </div>
+
+    <div id="verifyPopup" class="overlayVerifyPopup">
+        <div class="wrapper-verify-receipt">
+            <h1>Verification</h1>
+            <p>Please verify the details provided below.</p>
+            <div class="studNo-container">
+                <p><i class='bx bx-book'></i><span id="verifyStudentNo"></span></p>
+            </div>
+            <div class="fullName-container-student">
+                <p><i class='bx bx-user'></i><span id="verifyFullName"></span></p>
+            </div>
+            <div class="studentSection-container">
+                <p><i class='bx bxs-school'></i><span id="verifySection"></span></p>
+            </div>
+            <div class="teacherName-container">
+                <p><i class='bx bx-chalkboard'></i><span id="verifyTeacher"></span></p>
+            </div>
+            <div class="event-container">
+                <p><i class='bx bx-calendar-event'></i><span id="verifyEvents"></span></p>
+            </div>
+            <div class="amount-container">
+                <p><i class='bx bx-dollar-circle'></i><span id="verifyAmount"></span></p>
+            </div>
+            <div class="paymentMethod-container">
+                <p><i class='bx bx-wallet'></i><span id="verifyPaymentMethod"></span></p>
+            </div>
+            <div class="paymentApp-container">
+                <p><i class='bx bxl-paypal'></i><span id="verifyPaymentApp"></span></p>
+            </div>
+            <div class="refNumber-container">
+                <p><i class='bx bx-hash'></i><span id="verifyReferenceNumber"></span></p>
+            </div>
+            <div id="button-verify-receipt-container">
+                <button id="confirmSubmitButton">Confirm</button>
+                <button id="cancelSubmitButton">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="qrPopup">
+        <h2>QR Code Receipt</h2>
+        <p><span id="eventNamePlaceholder"></span></p>
+        <img src="" id="qrImage" alt="QR Code">
+        <button id="doneButton">DONE</button>
+    </div>
+
+    <script>
+        document.getElementById("registerButton").addEventListener("click", function() {
+            window.location.href = "studentRegistration.html";
+        });
+        
+        function toggleReferenceNumber() {
+            var paymentMethod = document.getElementById("paymentOptions").value;
+            var referenceNumberInput = document.getElementById("referenceNumber");
+            var appPayment = document.getElementById("appOptions")
+    
+            if (paymentMethod === "Cash") {
+            referenceNumberInput.type = "text";
+            referenceNumberInput.value = "Cash Payment";
+            referenceNumberInput.disabled = true;
+            appPayment.value = "Cash Payment";
+            appPayment.disabled = true;
+        } else {
+            referenceNumberInput.type = "number";
+            referenceNumberInput.disabled = false;
+            referenceNumberInput.placeholder = "Reference Number";
+            appPayment.value = "";
+            appPayment.disabled = false;
+        }
+        }
+    </script>
+</body>
+</html>

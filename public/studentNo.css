@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.studentIDVerifyPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.studentIDVerifyPopup .studNo-wrapper {
+    padding: .80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 150px;
+    width: 280px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.studentIDVerifyPopup .close-studNo-icon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+.studentIDVerifyPopup .close-studNo-icon i {
+    font-size: 1.50rem;
+    position: absolute;
+    right: .20rem;
+    top: .25rem;
+}
+
+.studentIDVerifyPopup .contents-studNo-wrapper {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.studentIDVerifyPopup .label-for-studNo {
+    position: relative;
+    left: -20px;
+}
+
+.studentIDVerifyPopup .contents-studNo-wrapper i {
+    color: gray;
+    position: absolute;
+    left: 1.20rem;
+    top: 2.53rem;
+}
+
+.studentIDVerifyPopup .studNo-wrapper input {
+    outline: none;
+    border: solid 1px gray;
+    height: 2rem;
+    padding-left: 1.70rem;
+}
+
+.studentIDVerifyPopup .button-container-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 87%;
+}
+
+.studentIDVerifyPopup #searchButton {
+    height: 1.80rem;
+    width: 4.50rem;
+    border: none;
+    outline: none;
+    background: rgb(8, 40, 136);
+    color: white;
+    letter-spacing: .05rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.studentIDVerifyPopup #searchButton:active {
+    opacity: 0.3;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+.studentIDVerifyPopup .studNo-wrapper {
+    padding: .80rem;
+    height: 170px;
+    width: 300px;
+}
+
+.studentIDVerifyPopup .close-studNo-icon i {
+    font-size: 1.70rem;
+}
+
+
+.studentIDVerifyPopup .label-for-studNo {
+    left: -23px;
+    font-size: 1.10rem;
+}
+
+.studentIDVerifyPopup .contents-studNo-wrapper i {
+    left: 1.20rem;
+    top: 2.82rem;
+    font-size: 1.10rem;
+}
+
+.studentIDVerifyPopup .studNo-wrapper input {
+    width: 13.30rem;
+    height: 2rem;
+    padding-left: 1.70rem;
+    font-size: .90rem;
+}
+
+
+.studentIDVerifyPopup #searchButton {
+    height: 1.90rem;
+    width: 4.70rem;
+    letter-spacing: .05rem;
+    font-size: .80rem;
+}
+}
+
+
+@media screen and (min-width: 425px){ 
+.studentIDVerifyPopup .studNo-wrapper {
+    padding: .80rem;
+    height: 200px;
+    width: 360px;
+}
+
+.studentIDVerifyPopup .close-studNo-icon i {
+    font-size: 1.80rem;
+}
+
+
+.studentIDVerifyPopup .label-for-studNo {
+    left: -23px;
+    font-size: 1.30rem;
+}
+
+.studentIDVerifyPopup .contents-studNo-wrapper i {
+    left: 1.80rem;
+    top: 3.40rem;
+    font-size: 1.30rem;
+}
+
+.studentIDVerifyPopup .studNo-wrapper input {
+    width: 15.30rem;
+    height: 2.80rem;
+    padding-left: 1.90rem;
+    font-size: 1.05rem;
+}
+
+.studentIDVerifyPopup #searchButton {
+    height: 2.40rem;
+    width: 5.50rem;
+    letter-spacing: .05rem;
+    font-size: .90rem;
+}
+}

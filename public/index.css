@@ -1,0 +1,1054 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CES Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100svh;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-color:#E1DEE0;
+}
+
+.first-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.logo-container {
+    background: url('images/CES\ LOGO\ WITHOUT\ BACKGROUND.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1.50rem;
+    left: 0.50rem;
+    width: 3.50rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.title-container {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: .65rem;
+}
+
+.p-container {
+    height: 7%;
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45%;
+    width: 100%;
+}
+
+.register-container {
+    height: 3rem;
+    width: 13rem;
+}
+
+.register-container button {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background-color:#061D62;
+    color: white;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+}
+
+.register-container button:active {
+    opacity: 0.7;
+}
+
+.login-container {
+    height: 3rem;
+    width: 13rem;
+}
+
+.login-container button {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background-color:#699C7D;
+    color: white;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+}
+
+.login-container button:active {
+    opacity: 0.7;
+}
+
+.img-container {
+    background: url('images/Graphic\ 2.png');
+    height: 40%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 750px;
+}
+
+.title-2-container h2 {
+    font-size: 1.50rem;
+}
+
+.scroller {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2rem 1rem;
+}
+
+.scroller::-webkit-scrollbar {
+    background: #699C7D;
+    border-radius: 50px;
+    height: 12px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    cursor:grab;
+    background:  #061D62;
+    border-radius: 50px;
+}
+
+
+.event-card {
+    flex: 1 0 auto;
+    width: 90%;
+    cursor: pointer;
+    border: solid 1px #444444;
+    padding-bottom: 20px;
+}
+
+.event-card:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.40s;
+}
+
+.event-img-container {
+    height: 82%;
+    width: 100%;
+}
+
+.event-img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event-name-container {
+    height: 8%;
+    width: 90%;
+    margin: 5px 10px;
+    overflow: hidden;
+}
+
+
+.learnMore-container {
+    height: 8%;
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    margin: 0 10px;
+}
+
+.learnMore-container button {
+    height: 85%;
+    width: 8rem;
+    border-radius: 3px;
+    border: none;
+    background: #061D62;
+    color: white;
+    font-size: .75rem;
+    letter-spacing: .05rem;
+    cursor: pointer
+}
+
+.learnMore-container button:active {
+    opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%svh;
+    width: 100%;
+    background-color: #E1DEE0;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+    margin-inline: 10px;
+}
+
+.footer-logo-container {
+    height: 24%;
+    width: 30%;
+}
+
+.footer-logo-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+
+.connect-with-us-links-container {
+    height: 55%;
+    width: 100%;
+}
+
+.connect-with-us-container {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.links-container {
+    margin: .30rem 0;
+    height: 15%;
+    width: 100%;
+    display: flex;
+}
+
+.links-container a {
+    color: black;
+    font-size: .73rem;
+}
+
+.right-container {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.developers-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .47rem;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.developers-container p {
+    font-size: .60rem;
+}
+
+
+.final-statement-container h5 {
+    font-size: .85rem;
+    margin-top: .70rem;
+    padding-right: 15px;
+}
+
+#qrPopup {
+    position: fixed;
+    backdrop-filter: blur(8px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    display: none;
+    z-index: 1001; 
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#qrPopup img{
+    width: 100%;
+    padding: 10px;
+}
+#qrPopup #eventNamePlaceholder {
+    font-size: 1.25rem;
+}
+
+#qrPopup.show-img{
+    max-height: 500px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+#doneButton{ 
+    position: static; 
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .08rem;
+    width: 6rem;
+    padding: 13px 18px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+/* Mobile medium*/
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+    .logo-container {
+        top: 1.50rem;
+        left: 0.70rem;
+        width: 4rem;
+    }
+    
+    .title-container {
+        height: 10%;
+    }
+
+    .title-container h1 {
+        font-size: 1.50rem;
+     }
+
+     .p-container {
+        height: 7%;
+        width: 100%;
+        font-size: .90rem;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 15.25rem;
+    }
+
+    .register-container button {
+        font-size: .96rem;
+    }
+
+    .login-container {
+        height: 3.20rem;
+        width: 15.25rem;
+    }
+
+    .login-container button {
+        font-size: .96rem;
+    }
+
+    .img-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.70rem;
+    }
+
+    .learnMore-container button {
+        font-size: .80rem;
+        letter-spacing: .07rem;
+    }
+
+    .footer-logo-container {
+        height: 25%;
+        width: 30%;
+    }
+
+    .connect-with-us {
+        height: 22%;
+    }
+
+    .connect-with-us h5 {
+        font-size: .85rem;
+    }
+
+    .links-container a {
+        font-size: .75rem;
+    }
+
+    .developers-container {
+        gap: .50rem;
+        padding-right: 15px;
+    }
+    
+    .developers-container p {
+        font-size: .70rem;
+    }
+    
+
+    .final-statement-container h5 {
+        font-size: .80rem;
+    }
+}
+
+/* Mobile large*/
+@media screen and (min-width: 425px) {
+
+    .logo-container {
+        top: 1.60rem;
+        left: 0.80rem;
+        width: 4.40rem;
+        height: 4rem;
+    }
+
+    .title-container {
+        height: 12%;
+    }
+
+    .title-container h1 {
+        font-size: 1.75rem;
+     }
+
+     .p-container {
+        height: 9%;
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .register-container {
+        height: 3.25rem;
+        width: 16.30rem;
+    }
+
+    .register-container button {
+        font-size: .96rem;
+    }
+
+    .login-container {
+        height: 3.25rem;
+        width: 16.30rem;
+    }
+
+    .login-container button {
+        font-size: .96rem;
+    }
+
+    .img-container {
+        background-size: contain;
+        background-position: center;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.90rem;
+    }
+
+    
+    .event-card {
+        width: 70%;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .footer-logo-container {
+        height: 26%;
+        width: 30%;
+    }
+
+    .connect-with-us {
+        height: 23%;
+    }
+
+    .connect-with-us h5 {
+        font-size: .95rem;
+    }
+
+    .links-container a {
+        font-size: .85rem;
+    }
+
+    .developers-container {
+        height: 80%;
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+        gap: .50rem;
+    }
+
+    .developers-container p {
+        font-size: .75rem;
+    }
+
+    .developers-container h5 {
+        font-size: .85rem;
+    }
+
+    .final-statement-container h5 {
+        font-size: .90rem;
+        margin-top: 1.30rem;
+    }
+}
+
+
+/* Tablet*/
+@media screen and (min-width: 768px) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .logo-container {
+        top: 1.50rem;
+        left: .80rem;
+        width: 4rem;
+        height: 115px;
+    }
+
+    .first-container {
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .title-container {
+        height: 27%;
+        width: 95%;
+        text-align: start;
+    }
+
+    .title-container h1 {
+       font-size: 2.50rem;
+    }
+
+    .p-container {
+        height: 10%;
+        width: 95%;
+        font-size: 1rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 20%;
+        width: 95%;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 10rem;
+        margin-right:2vw;
+    }
+
+    .register-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    
+    .login-container {
+        height: 3.30rem;
+        width: 10rem;
+    }
+
+    .login-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    .img-container {
+        height: 41vw;
+        width: 49%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper-2 {
+        position: relative;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.60rem;
+        position: absolute;
+        top: 3rem;
+        left: 2.10rem;
+    }
+
+    .scroller {
+        width: 95%;
+    }
+    
+    
+    .event-card {
+        width: 40%;
+        cursor: pointer;
+        border: solid 1px #444444;
+        padding-bottom: 20px;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .left-container {
+        width: 30%;
+    }
+
+    footer {
+        height: 100%svh;
+        justify-content: center;
+    }
+
+    .links-container {
+        margin: 0;
+        height: 15%;
+        width: 100%;
+        display: flex;
+    }
+    
+    .links-container a {
+        color: black;
+        font-size: .73rem;
+    }
+
+    .right-container {
+        width: 35%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .connect-with-us-container h5 {
+        font-size: .85rem;
+    }
+    
+    .links-container a {
+        font-size: .75rem;
+    }
+
+    .developers-container {
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .developers-container p {
+        font-size: .70rem;
+        width: 106%;
+    }
+
+    .developers-container h5 {
+        font-size: 1rem;
+    }
+    
+    .final-statement-container h5 {
+        font-size: 1.10rem;
+    }
+    
+}
+
+
+/* Laptop*/
+@media screen and (min-width: 1024px) and (max-width: 1229px) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .logo-container {
+        top: 1.50rem;
+        left: .80rem;
+        width: 5rem;
+        height: 115px;
+    }
+
+    .first-container {
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .title-container {
+        height: 30%;
+        width: 95%;
+        text-align: start;
+    }
+
+    .title-container h1 {
+       font-size: 2.80rem;
+    }
+
+    .p-container {
+        height: 10%;
+        width: 95%;
+        font-size: 1.20rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 20%;
+        width: 95%;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 10rem;
+        margin-right:2vw;
+    }
+
+    .register-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    
+    .login-container {
+        height: 3.30rem;
+        width: 10rem;
+    }
+
+    .login-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    .img-container {
+        height: 70%;
+        width: 49%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper-2 {
+        position: relative;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.80rem;
+        position: absolute;
+        top: 3rem;
+        left: 2.10rem;
+    }
+
+    .scroller {
+        width: 90%;
+        gap: 2rem;
+    }
+    
+    .event-card {
+        width: 35%;
+        cursor: pointer;
+        border: solid 1px #444444;
+        padding-bottom: 20px;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .right-container {
+        width: 30%;
+        height: 100%;
+    }
+
+    footer {
+        height: 100%svh;
+        justify-content: center;
+    }
+
+    .footer-logo-container {
+        height: 18%;
+        width: 30%;
+    }
+
+    .connect-with-us-container h5 {
+        font-size: 1rem;
+    }
+    
+    .links-container a {
+        font-size: .95rem;
+    }
+
+    .developers-container {
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .developers-container p {
+        font-size: .85rem;
+        width: 106%;
+    }
+
+    .developers-container h5 {
+        font-size: 1.10rem;
+    }
+    
+    .final-statement-container h5 {
+        font-size: 1.20rem;
+    }
+    
+}
+
+
+/* Large laptop to larger screens*/
+@media screen and (min-width: 1300px) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 650px;
+    }
+
+    .logo-container {
+        top: 1.50rem;
+        left: 3.50rem;
+        width: 6rem;
+        height: 115px;
+    }
+
+    .first-container {
+        height: 80%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-container {
+        height: 30%;
+        width: 100%;
+        text-align: start;
+    }
+
+    .title-container h1 {
+       font-size: 3rem;
+    }
+
+    .p-container {
+        height: 10%;
+        width: 100%;
+        font-size: 1.50rem;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 20%;
+        width: 100%;
+    }
+
+    .register-container {
+        height: 3.20rem;
+        width: 10rem;
+        margin-right:2vw;
+    }
+
+    .register-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    
+    .login-container {
+        height: 3.30rem;
+        width: 10rem;
+    }
+
+    .login-container button {
+        height: 100%;
+        width: 100%;
+        font-size: .88rem
+    }
+
+    .img-container {
+        height: 100%;
+        width: 53%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper-2 {
+        position: relative;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.80rem;
+        position: absolute;
+        top: 3rem;
+        left: 7vw;
+    }
+
+    .title-2-container h2 {
+        font-size: 1.80rem;
+        position: absolute;
+        top: 3rem;
+        left: 7.10rem;
+    }
+
+    .scroller {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .event-card {
+        width: 25%;
+        cursor: pointer;
+        border: solid 1px #444444;
+        padding-bottom: 20px;
+    }
+
+    .learnMore-container button {
+        font-size: .85rem;
+        letter-spacing: .07rem;
+    }
+
+    .right-container {
+        width: 30%;
+        height: 100%;
+    }
+
+    footer {
+        height: 100%svh;
+        justify-content: center;
+    }
+
+    .footer-logo-container {
+        height: 6rem;
+        width: 30%;
+        padding: 1rem;
+    }
+
+    .connect-with-us-container h5 {
+        font-size: 1rem;
+    }
+    
+    .links-container a {
+        font-size: .95rem;
+    }
+
+    .developers-container {
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 1rem;
+    }
+
+    .developers-container p {
+        font-size: .85rem;
+        width: 106%;
+    }
+
+    .developers-container h5 {
+        font-size: 1rem;
+    }
+    
+    .final-statement-container h5 {
+        font-size: 1.20rem;
+    }
+    
+}
+
+

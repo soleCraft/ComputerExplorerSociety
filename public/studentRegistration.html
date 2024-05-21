@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Registration form</title>
+    <link rel="stylesheet" href="studentRegistration.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="studentRegistration.js"></script>
+</head>
+<body>
+    <!--Register Student Form HTML-->
+    <div id="registrationPopup" class="overlay">
+        <form id="registrationForm" class="form-register-student" >
+            <div class="close-button" id="closeBtn"><i class='bx bx-x'></i></div>
+            <div class="title-container">
+                <h1>Student Registration</h1>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-book'></i>
+                <input type="text" id="studentNumber" placeholder="Student Number" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-user'></i>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bxs-school'></i>
+                <input type="text" id="section" placeholder="Section" required>
+            </div>
+            <div class="textBox-container">
+                <i class='bx bx-envelope'></i>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Verify Student Registration -->
+    <div id="verifyPopup" class="overlay">
+        <div class="wrapper-verify-student" id="wrapper-verify-student">
+            <h1>Verify Input</h1>
+            <p>Please verify the details provided below.</p>
+            <div class="studNo-container">
+                <p><i class='bx bx-book'></i><span id="verifyStudentNo"></span></p>
+            </div>
+            <div class="fullName-container-student">
+                <p><i class='bx bx-user'></i><span id="verifyFullName"></span></p>
+            </div>
+            <div class="studentSection-container">
+                <p><i class='bx bxs-school'></i><span id="verifySection"></span></p>
+            </div>
+                <div class="email-container">
+                <p><i class='bx bx-envelope'></i><span id="verifyEmail"></span></p>
+            </div>
+            <div id="button-verify-student-container">
+                <button id="confirmSubmitButton">Confirm</button>
+                <button id="cancelSubmitButton">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

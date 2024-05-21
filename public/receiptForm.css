@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Receipt Form CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.receipt-form-wrapper {
+    height: 450px;
+    width: 90%;
+    border: solid 1px gray;
+    border-radius: 5px;
+    position: absolute;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    position: fixed;
+}
+#overlay h1 {
+    text-align: center;
+}
+#overlay .close-studNo-icon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#overlay .close-studNo-icon i {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#overlay .bx-hash {
+    position: absolute;
+    color: gray;
+    font-size: 1.20rem;
+    top: 78.6%;
+    left: 12%;
+}
+
+#overlay .bxl-paypal {
+    position: absolute;
+    color: gray;
+    font-size: 1.20rem;
+    top: 67.8%;
+    left: 12%;
+}
+
+#overlay .bx-wallet {
+    position: absolute;
+    color: gray;
+    font-size: 1.20rem;
+    top: 57%;
+    left: 12%;
+}
+
+#overlay .bx-calendar-event {
+    position: absolute;
+    color: gray;
+    font-size: 1.20rem;
+    top: 46.1%;
+    left: 12%;
+}
+
+
+#overlay .bx-chalkboard {
+    position: absolute;
+    color: gray;
+    font-size: 1.20rem;
+    top: 35.4%;
+    left: 12%;
+}
+
+#overlay .receipt-form-wrapper select {
+    width: 80%;
+    height: 7%;
+    outline: none;
+    border: solid 1px gray;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+#overlay .receipt-form-wrapper select option {
+    padding-left: 2rem;
+}
+
+#overlay .receipt-form-wrapper option {
+    cursor: pointer;
+}
+
+#overlay #referenceNumber {
+    width: 80%;
+    height: 7%;
+    outline: none;
+    border: solid 1px gray;
+    padding-left: 1.90rem;
+}
+
+#overlay #referenceNumber::-webkit-inner-spin-button,
+#overlay #referenceNumber::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#overlay #submitButton {
+    width: 80%;
+    height: 8%;
+    color: white;
+    border: none;
+    font-size: .90rem;
+    letter-spacing: .10rem;
+    cursor: pointer;
+    background: linear-gradient(to right, #36bd6c, #082888);
+    text-align: center;
+}
+
+#overlay #submitButton:active {
+    opacity: 0.7;
+}
+@media screen and (min-width: 242px) and (max-width: 319px) {
+    #overlay .bx-hash {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 76.3%;
+        left: 12%;
+    }
+    
+    #overlay .bxl-paypal {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 64.1%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 52%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 39.8%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 28.2%;
+        left: 12%;
+    }
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 7%;
+        padding-left: 1.75rem;
+    }
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.20%;
+        padding-left: 1.90rem;
+        font-size: .83rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 8.50%;
+        font-size: .90rem;
+        letter-spacing: .10rem;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #overlay .bx-hash {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 75.8%;
+        left: 12%;
+    }
+    
+    #overlay .bxl-paypal {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 63.6%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 51.4%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 39.2%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        position: absolute;
+        color: gray;
+        font-size: 1.20rem;
+        top: 27.6%;
+        left: 12%;
+    }
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 7%;
+        padding-left: 2.5rem;
+    }
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.20%;
+        padding-left: 2.7rem;
+        font-size: .83rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 8.50%;
+        font-size: .90rem;
+        letter-spacing: .10rem;
+        cursor: pointer;
+    }
+
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #overlay .receipt-form-wrapper {
+        height: 450px;
+        width: 90%;
+    }
+    
+    #overlay .bx-hash {
+        font-size: 1.25rem;
+        top: 75.8%;
+        left: 12%;
+    }
+    
+    #overlay .bxl-paypal {
+        font-size: 1.25rem;
+        top: 63.8%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        font-size: 1.25rem;
+        top: 51.7%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        font-size: 1.25rem;
+        top: 39.7%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        font-size: 1.25rem;
+        top: 27.8%;
+        left: 12%;
+    }
+    
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 7%;
+        padding-left: 2.5rem;
+    }
+    
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.20%;
+        padding-left: 2.7rem;
+        font-size: .83rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 8.50%;
+        font-size: .90rem;
+        letter-spacing: .10rem;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    #overlay .receipt-form-wrapper {
+        height: 500px;
+        width: 90%;
+    }
+
+    #overlay .receipt-form-wrapper h1{
+        font-size: 2.40rem;
+    }
+    
+    #overlay .bx-hash {
+        font-size: 1.30rem;
+        top: 76.7%;
+        left: 12%;
+    }
+    
+    #overlay .bxl-paypal {
+        font-size: 1.30rem;
+        top: 64.8%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        font-size: 1.30rem;
+        top: 52.2%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        font-size: 1.30rem;
+        top: 39.7%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        font-size: 1.30rem;
+        top: 27.33%;
+        left: 12%;
+    }
+    
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 8%;
+        padding-left: 2.5rem;
+        font-size: .90rem;
+    }
+    
+    
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.40%;
+        padding-left: 2.7rem;
+        font-size: .93rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 8.70%;
+        font-size: 1rem;
+        letter-spacing: .10rem;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #overlay .receipt-form-wrapper {
+        height: 500px;
+        width: 50%;
+    }
+
+    #overlay .receipt-form-wrapper h1{
+        font-size: 2.45rem;
+    }
+    
+    #overlay .bx-hash {
+        font-size: 1.35rem;
+        top: 77.3%;
+        left: 12%;
+    }
+    
+    #overlay .bxl-paypal {
+        font-size: 1.35rem;
+        top: 65.1%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        font-size: 1.35rem;
+        top: 52.1%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        font-size: 1.35rem;
+        top: 39.2%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        font-size: 1.35rem;
+        top: 26.4%;
+        left: 12%;
+    }
+    
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 9%;
+        padding-left: 2.5rem;
+        font-size: .95rem;
+    }
+    
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.60%;
+        padding-left: 2.30rem;
+        font-size: .95rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 9%;
+        font-size: 1.10rem;
+        letter-spacing: .10rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+    #overlay .receipt-form-wrapper {
+        height: 500px;
+        width: 50%;
+    }
+
+    #overlay .receipt-form-wrapper h1{
+        font-size: 2.45rem;
+    }
+    
+    #overlay .bx-hash {
+        font-size: 1.35rem;
+        top: 77.1%;
+        left: 12%;
+        
+    }
+    
+    #overlay .bxl-paypal {
+        font-size: 1.35rem;
+        top: 65%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        font-size: 1.35rem;
+        top: 52.08%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        font-size: 1.35rem;
+        top: 39.15%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        font-size: 1.35rem;
+        top: 26.4%;
+        left: 12%;
+    }
+    
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 9%;
+        padding-left: 2.5rem;
+        font-size: .95rem;
+    }
+    
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.80%;
+        padding-left: 2.30rem;
+        font-size: .95rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 9%;
+        font-size: 1.10rem;
+        letter-spacing: .10rem;
+    }
+}
+
+
+@media screen and (min-width: 1366px) {
+
+    #overlay .receipt-form-wrapper {
+        height: 550px;
+        width: 33%;
+    }
+
+    #overlay .receipt-form-wrapper h1{
+        font-size: 2.50em;
+    }
+    
+    #overlay .bx-hash {
+        font-size: 1.40rem;
+        top: 76.25%;
+        left: 12%;
+        
+    }
+    
+    #overlay .bxl-paypal {
+        font-size: 1.40rem;
+        top: 64%;
+        left: 12%;
+    }
+    
+    #overlay .bx-wallet {
+        font-size: 1.35rem;
+        top: 51.8%;
+        left: 12%;
+    }
+    
+    #overlay .bx-calendar-event {
+        font-size: 1.40rem;
+        top: 39%;
+        left: 12%;
+    }
+    
+    
+    #overlay .bx-chalkboard {
+        font-size: 1.40rem;
+        top: 27%;
+        left: 12%;
+    }
+    
+    #overlay .receipt-form-wrapper select {
+        width: 80%;
+        height: 8%;
+        padding-left: 2.5rem;
+        font-size: .95rem;
+    }
+    
+    
+    #overlay #referenceNumber {
+        width: 80%;
+        height: 7.80%;
+        padding-left: 2.45rem;
+        font-size: .95rem;
+    }
+    
+
+    #overlay #submitButton {
+        width: 80%;
+        height: 9%;
+        font-size: 1.10rem;
+        letter-spacing: .10rem;
+    }
+}
+
+
